@@ -34,6 +34,12 @@ h3 {
 #home-cover {
   height: 100%;
   background-image: url("photos/grass2.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -163,9 +169,15 @@ h3 {
 /*////////////////////about section////////////////////*/
 #about-bg-diagonal {
   width: 500px;
-  height: 500px;
+  min-height: 500px;
   float: right;
   background-image: url(photos/4.png);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   background-size: 600px 600px;
   background-repeat: no-repeat;
   background-position: right;
@@ -173,7 +185,7 @@ h3 {
   border-top: 700px solid transparent;
 }
 #about-content-box {
-  height: 750px;
+  min-height: 750px;
 }
 #about-content-box-outer {
   width: 100%;
@@ -195,19 +207,32 @@ h3 {
 }
 #about-bg-diagonal2 {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   float: right;
   background-image: url(photos/4.png);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   background-size: 100% *;
   background-repeat: no-repeat;
   background-position: right;
+  background-attachment:scroll;
 }
 /*////////////////////project section////////////////////*/
 #project-bg {
   width: 50%;
-  height: 300px;
+  min-height: 300px;
   float: left;
   background-image: url(photos/field.jpg);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   background-position: left;
   border-left: 200px solid transparent;
   border-top: 700px solid transparent;
@@ -216,10 +241,17 @@ h3 {
 }
 #project-bg2 {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   float: left;
   background-image: url(photos/field.jpg);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   background-position: left;
+  background-attachment:scroll;
   /*padding-top: 30px;*/
 }
 #project-content-box {
@@ -248,21 +280,34 @@ h3 {
 
 /*////////////////////message section////////////////////*/
 #message-bg {
-  width: 800px;
-  height: 950px;
+  width: 50%;
+  min-height: 950px;
   float: right;
   background-image: url(photos/photobooth2.jpg);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 #message-bg2 {
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   float: right;
-  background-  right;
+  background-position: right;
   background-image: url(photos/photobooth2.jpg);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-attachment:scroll;
 }
 #message-content-box {
   float: left;
-  height: 950px;
+  min-height: 950px;
   width: 100%;
 }
 #message-content-box-outer {
@@ -274,11 +319,11 @@ h3 {
   display: table-cell;
   vertical-align: middle;
 }
-#message .content-title h3 {
+#message-section .content-title h3 {
   padding-top: 30px;
   text-align: left;
 }
-#message .content-title-underline {
+#message-section .content-title-underline {
   margin: 0 0 30px 0;
 }
 #message-desc p {
@@ -453,33 +498,48 @@ appearance: none; {
           border-radius: 4px;
 }
 #iframeinstagram, #iframeinstagram ul, #iframeinstagram div, #iframeinstagram .container{
-  max-height: 700px;
+  min-height: 300px;
   overflow: hidden;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 .bottom-img{
-  width: 50%;
-  max-height: 350px;
+  width: 99%;
+  max-height: 290px;
   float: left;
   overflow: hidden;
 }
 .bottom-img-2{
-  width: 100%;
+  width: 50%;
   float: left;
   overflow: hidden;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
   #home-cover {
     height: 100%;
     background-image: url("photos/grass2c.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .heroSection {
       padding: 370px 0 50px 0 !important;
   }
+
+  .nav-wrapper {
+      padding: 0;
+  }
+
+  .navbar-nav>li>a {
+      float: right;
+  }
+
 }
